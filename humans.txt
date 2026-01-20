@@ -1,0 +1,14 @@
+/* TEAM */
+Restaurant: El San Jose Mexican Restaurant
+Location: Lake City, South Carolina, USA
+Contact: (843) 394-5522
+
+/* SITE */
+Hosted by: TechGuyWithABeard
+Website: https://michalferber.dev/
+Standards: HTML5, CSS3, JavaScript
+Software: Visual Studio Code
+Last update: 2026-01-20
+
+/* THANKS */
+Built with love for authentic Mexican cuisine.

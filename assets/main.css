@@ -3440,3 +3440,18 @@ h1.style7 span.p:nth-child(n + 2), h2.style7 span.p:nth-child(n + 2), h3.style7 
 		gap: 0.375rem;
 	}
 }
+
+/* Custom icon-svg styling for img-based SVG icons */
+.icons li a .icon-svg {
+	display: block;
+	pointer-events: none;
+	position: relative;
+	height: 60%;
+	width: 60%;
+	transition: filter 0.25s ease;
+}
+
+.icons.style1 li a .icon-svg {
+	height: 60%;
+	width: 60%;
+}
