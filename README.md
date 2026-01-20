@@ -50,6 +50,7 @@ elsanjose.com/
 ├── sitemap.xml             # XML sitemap for SEO
 ├── humans.txt              # Credits and acknowledgments
 ├── ads.txt                 # Authorized digital sellers
+├── LICENSE                 # MIT License
 ├── README.md               # This file
 ├── .well-known/
 │   └── security.txt        # Security policy
@@ -57,10 +58,11 @@ elsanjose.com/
 │   └── workflows/
 │       └── deploy.yml      # GitHub Pages deployment workflow
 └── assets/
-    ├── main.css            # Main stylesheet
-    ├── main.js             # Main JavaScript
+    ├── main.min.css        # Optimized stylesheet (36KB)
+    ├── main.min.js         # Optimized JavaScript (31KB)
+    ├── main.css            # Original stylesheet (backup)
+    ├── main.js             # Original JavaScript (backup)
     ├── noscript.css        # Styles for no-JS browsers
-    ├── icons.svg           # SVG icon sprites
     └── images/             # Image assets
         ├── gallery01/      # Menu images
         └── gallery02/      # Restaurant photos
@@ -69,11 +71,18 @@ elsanjose.com/
 ## 🛠️ Technical Details
 
 - **Type:** Static HTML website
-- **CSS:** Custom CSS with responsive design
-- **JavaScript:** Vanilla JS with gallery lightbox
+- **CSS:** Optimized CSS with CSS variables and responsive design
+- **JavaScript:** Vanilla JS with gallery lightbox, scroll animations, and slideshow
 - **Fonts:** Inter (Google Fonts)
 - **Hosting:** GitHub Pages
 - **SSL:** Enabled via GitHub Pages
+
+### Performance Optimizations
+
+| Asset | Original | Optimized | Reduction |
+|-------|----------|-----------|-----------|
+| CSS   | 88KB (3,466 lines) | 36KB (392 lines) | 59% smaller |
+| JS    | 95KB (4,244 lines) | 31KB (822 lines) | 67% smaller |
 
 ## 📋 Web Standards Compliance
 
@@ -89,8 +98,6 @@ This website includes:
 - ✅ Responsive viewport meta tag
 - ✅ Semantic HTML5
 
-## 📝 License
+## 📝 [License](LICENSE)
 
-© 2025 El San Jose Mexican Restaurant. All rights reserved.
-
-Hosted by [TechGuyWithABeard](https://techguywithabeard.com/)
+Hosted by Michal Ferber, aka TechGuyWithABeard
