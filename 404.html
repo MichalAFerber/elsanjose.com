@@ -7,11 +7,25 @@
 		<meta name="color-scheme" content="light only" />
 		<meta name="description" content="Page not found - El San Jose Mexican Restaurant" />
 		<meta name="robots" content="noindex, nofollow" />
-		<link href="https://fonts.googleapis.com/css2?display=swap&family=Inter:ital,wght@0,400;0,600;1,400;1,600" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css2?display=swap&family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600" rel="stylesheet" type="text/css" />
 		<link rel="icon" type="image/png" href="assets/images/favicon.png" />
 		<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
-		<link rel="stylesheet" href="assets/main.css" />
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-J81W61W6QP"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-J81W61W6QP');
+		</script>
 		<style>
+			*, *:before, *:after { box-sizing: border-box; margin: 0; padding: 0; }
+			body {
+				font-family: 'Inter', -apple-system, sans-serif;
+				background: #FFF8F0;
+				color: #2D2D3A;
+				min-height: 100vh;
+			}
 			.error-container {
 				display: flex;
 				flex-direction: column;
@@ -20,40 +34,63 @@
 				min-height: 100vh;
 				text-align: center;
 				padding: 2rem;
-				font-family: 'Inter', sans-serif;
 			}
 			.error-code {
-				font-size: 6rem;
-				font-weight: 600;
-				color: #623a15;
-				margin: 0;
+				font-family: 'Playfair Display', Georgia, serif;
+				font-size: 8rem;
+				font-weight: 700;
+				color: #C41E3A;
 				line-height: 1;
+				margin-bottom: 0.5rem;
 			}
 			.error-message {
-				font-size: 1.5rem;
-				color: #333;
-				margin: 1rem 0 2rem;
+				font-family: 'Playfair Display', Georgia, serif;
+				font-size: 1.75rem;
+				color: #1A1A2E;
+				margin-bottom: 0.75rem;
+				font-weight: 400;
+				font-style: italic;
+			}
+			.error-description {
+				font-size: 1.05rem;
+				color: #6B6B7B;
+				margin-bottom: 2.5rem;
+				max-width: 400px;
+			}
+			.accent-bar {
+				width: 80px;
+				height: 4px;
+				background: linear-gradient(90deg, #1B6B3A, #C41E3A, #1B6B3A);
+				border-radius: 2px;
+				margin-bottom: 2rem;
 			}
 			.home-link {
-				display: inline-block;
-				padding: 1rem 2rem;
-				background-color: #623a15;
+				display: inline-flex;
+				align-items: center;
+				padding: 0.875rem 2rem;
+				background: #C41E3A;
 				color: #fff;
 				text-decoration: none;
-				border-radius: 0.5rem;
+				border-radius: 3rem;
 				font-weight: 600;
-				transition: background-color 0.3s ease;
+				font-size: 1rem;
+				transition: background 0.25s ease, transform 0.25s ease;
+				border: 2px solid #C41E3A;
 			}
 			.home-link:hover {
-				background-color: #7a4a1d;
+				background: #9B1830;
+				border-color: #9B1830;
+				transform: translateY(-2px);
 			}
 		</style>
 	</head>
 	<body>
 		<div class="error-container">
 			<h1 class="error-code">404</h1>
-			<p class="error-message">¡Ay caramba! Page not found.</p>
-			<a href="/" class="home-link">Return to Home</a>
+			<div class="accent-bar"></div>
+			<p class="error-message">Ay caramba! Page not found.</p>
+			<p class="error-description">The page you're looking for doesn't exist or has been moved. Let's get you back to the good stuff.</p>
+			<a href="/" class="home-link">Back to Home</a>
 		</div>
 	</body>
 </html>

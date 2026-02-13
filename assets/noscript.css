@@ -6,11 +6,12 @@ body:after {
 	display: none !important;
 }
 
-#main > .inner {
-	opacity: 1.0 !important;
-}
-
-#main {
+#hero,
+.section-welcome,
+.section-hours,
+.section-menu,
+.section-gallery,
+.section-footer {
 	opacity: 1.0 !important;
 	transform: none !important;
 	transition: none !important;
