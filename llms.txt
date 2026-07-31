@@ -1,0 +1,11 @@
+# El San Jose Mexican Restaurant
+
+> Authentic Mexican restaurant in Lake City, SC. Serving tacos, burritos, enchiladas, and more at 275 W Main St. Call (843) 394-5522. Static one-page site.
+
+## Pages
+
+- [Home](https://elsanjose.com/)
+
+## Source
+
+- [GitHub repository](https://github.com/MichalAFerber/elsanjose.com)
