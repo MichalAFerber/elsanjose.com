@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://elsanjose.com/sitemap.xml
+Sitemap: https://elsanjose.com/sitemap-index.xml
 
 # Crawl-delay (optional, some bots respect this)
 Crawl-delay: 1
