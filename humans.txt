@@ -8,7 +8,7 @@ Hosted by: TechGuyWithABeard
 Website: https://michalferber.dev/
 Standards: HTML5, CSS3, JavaScript
 Software: Visual Studio Code
-Last update: 2026-01-20
+Last update: 2026-08-03
 
 /* THANKS */
 Built with love for authentic Mexican cuisine.

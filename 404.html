@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<meta name="color-scheme" content="light only" />
 		<meta name="description" content="Page not found - El San Jose Mexican Restaurant" />
-		<meta name="robots" content="noindex, nofollow" />
+		<meta name="robots" content="noindex, follow" />
 		<link href="https://fonts.googleapis.com/css2?display=swap&family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600" rel="stylesheet" type="text/css" />
-		<link rel="icon" type="image/png" href="assets/images/favicon.png" />
+		<link rel="icon" type="image/png" href="/assets/images/favicon.png" />
 		<link rel="icon" href="/favicon.ico" sizes="32x32" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<link rel="manifest" href="/site.webmanifest" />
@@ -21,13 +21,15 @@
 				background: #FFF8F0;
 				color: #2D2D3A;
 				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
 			}
 			.error-container {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
-				min-height: 100vh;
+				flex: 1;
 				text-align: center;
 				padding: 2rem;
 			}
@@ -78,6 +80,26 @@
 				border-color: #9B1830;
 				transform: translateY(-2px);
 			}
+			.site-footer {
+				text-align: center;
+				padding: 1.5rem 2rem;
+				color: #6B6B7B;
+				font-size: 0.85rem;
+			}
+			.site-footer p {
+				margin: 0.2rem 0;
+			}
+			.site-footer a {
+				color: #C41E3A;
+				text-decoration: none;
+			}
+			.site-footer a:hover {
+				text-decoration: underline;
+			}
+			.hosted-by {
+				font-size: 0.8rem;
+				opacity: 0.85;
+			}
 		</style>
 	</head>
 	<body>
@@ -88,6 +110,10 @@
 			<p class="error-description">The page you're looking for doesn't exist or has been moved. Let's get you back to the good stuff.</p>
 			<a href="/" class="home-link">Back to Home</a>
 		</div>
+		<footer class="site-footer">
+			<p>&copy; 2026 El San Jose Mexican Restaurant. All rights reserved.</p>
+			<p class="hosted-by">Created with <span aria-label="love">❤️</span> by <a href="https://michalferber.dev/" target="_blank" rel="noopener">Michal Ferber</a>, aka <a href="https://techguywithabeard.com/" target="_blank" rel="noopener">TechGuyWithABeard</a>.</p>
+		</footer>
 	<script>window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)};plausible("404",{props:{path:document.location.pathname}})</script>
 </body>
 </html>
