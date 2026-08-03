@@ -31,12 +31,10 @@ El San Jose Mexican Restaurant is a family-owned establishment offering deliciou
 
 ## 🚀 Deployment
 
-This website is hosted on **GitHub Pages** and automatically deploys when changes are pushed to the `main` branch.
-
-### Manual Deployment
+This website is hosted on **Cloudflare Pages** and automatically deploys via the Pages Git integration when changes are pushed to the `main` branch.
 
 1. Push changes to the `main` branch
-2. GitHub Actions will automatically build and deploy the site
+2. Cloudflare Pages automatically builds and deploys the site
 3. Visit [elsanjose.com](https://elsanjose.com) to see the live site
 
 ## 📁 Project Structure
@@ -48,20 +46,23 @@ elsanjose.com/
 ├── CNAME                   # Custom domain configuration
 ├── robots.txt              # Search engine crawling rules
 ├── sitemap.xml             # XML sitemap for SEO
+├── sitemap-index.xml       # Sitemap index (advertised in robots.txt)
 ├── humans.txt              # Credits and acknowledgments
-├── ads.txt                 # Authorized digital sellers
+├── llms.txt                # Site summary for AI crawlers
+├── ads.txt                 # Programmatic ad inventory declaration
+├── site.webmanifest        # Web app manifest
+├── favicon.ico             # Favicon (16/32/48)
+├── apple-touch-icon.png    # Apple touch icon (180x180)
+├── icon-192.png            # PWA icon (192x192)
+├── icon-512.png            # PWA icon (512x512)
+├── icon-512-maskable.png   # PWA maskable icon (512x512)
 ├── LICENSE                 # MIT License
 ├── README.md               # This file
 ├── .well-known/
 │   └── security.txt        # Security policy
-├── .github/
-│   └── workflows/
-│       └── deploy.yml      # GitHub Pages deployment workflow
 └── assets/
-    ├── main.min.css        # Optimized stylesheet (36KB)
-    ├── main.min.js         # Optimized JavaScript (31KB)
-    ├── main.css            # Original stylesheet (backup)
-    ├── main.js             # Original JavaScript (backup)
+    ├── main.min.css        # Optimized stylesheet
+    ├── main.min.js         # Optimized JavaScript
     ├── noscript.css        # Styles for no-JS browsers
     └── images/             # Image assets
         ├── gallery01/      # Menu images
@@ -73,9 +74,9 @@ elsanjose.com/
 - **Type:** Static HTML website
 - **CSS:** Optimized CSS with CSS variables and responsive design
 - **JavaScript:** Vanilla JS with gallery lightbox, scroll animations, and slideshow
-- **Fonts:** Inter (Google Fonts)
-- **Hosting:** GitHub Pages
-- **SSL:** Enabled via GitHub Pages
+- **Fonts:** Playfair Display & Inter (Google Fonts)
+- **Hosting:** Cloudflare Pages
+- **SSL:** Enabled via Cloudflare
 
 ### Performance Optimizations
 
@@ -89,10 +90,12 @@ elsanjose.com/
 This website includes:
 
 - ✅ `robots.txt` - Search engine directives
-- ✅ `sitemap.xml` - XML sitemap for SEO
+- ✅ `sitemap.xml` + `sitemap-index.xml` - XML sitemaps for SEO
 - ✅ `humans.txt` - Team credits
-- ✅ `ads.txt` - Authorized ad sellers
+- ✅ `llms.txt` - Site summary for AI crawlers
+- ✅ `ads.txt` - Programmatic ad inventory declaration
 - ✅ `security.txt` - Security contact info
+- ✅ `site.webmanifest` - Web app manifest with icons
 - ✅ `404.html` - Custom error page
 - ✅ Open Graph meta tags
 - ✅ Responsive viewport meta tag
@@ -100,4 +103,4 @@ This website includes:
 
 ## 📝 [License](LICENSE)
 
-Created by Michal Ferber, aka TechGuyWithABeard
+Created with ❤️ by [Michal Ferber](https://michalferber.dev/), aka [TechGuyWithABeard](https://techguywithabeard.com/)

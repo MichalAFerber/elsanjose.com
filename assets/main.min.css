@@ -650,6 +650,12 @@ section h2::after {
 }
 .footer-bottom a:hover { color: var(--color-accent); }
 
+.hosted-by {
+	margin-top: 0.35rem;
+	font-size: 0.8rem;
+	opacity: 0.8;
+}
+
 /* =================================
    DEFERRED LOADING
    ================================= */
@@ -887,15 +893,4 @@ section h2::after {
 	.section-hero h1 { font-size: 2.25rem; }
 	.hero-subtitle { font-size: 1rem; }
 	.btn { padding: 0.75rem 1.5rem; font-size: 0.9rem; }
-}
-
-/* Icon heart (footer) */
-.icon-heart {
-	background-image: url(https://assets.michalferber.me/svg/heart.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	display: inline-block;
-	width: 18px;
-	height: 18px;
-	vertical-align: middle;
 }
