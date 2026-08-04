@@ -1,16 +1,4 @@
-# robots.txt for elsanjose.com
-# https://www.robotstxt.org/
-
 User-agent: *
 Allow: /
 
-# Sitemaps
 Sitemap: https://elsanjose.com/sitemap-index.xml
-
-# Crawl-delay (optional, some bots respect this)
-Crawl-delay: 1
-
-# Disallow access to assets that don't need indexing
-
-# Allow search engines to index images
-Allow: /assets/images/

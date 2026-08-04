@@ -29,12 +29,14 @@ El San Jose Mexican Restaurant is a family-owned establishment offering deliciou
 - **Facebook:** [El San Jose Mexican Restaurant](https://www.facebook.com/p/El-San-Jo%C5%9Be-Mexican-Restaurant-100054416922443/)
 - **Order Online:** [Uber Eats](https://www.ubereats.com/store/el-san-jose-lake-city-mexican/by2_YlwRRI6HhDw6Dkeu7A)
 
-## 🚀 Deployment
+## 🚀 Deploy
 
-This website is hosted on **Cloudflare Pages** and automatically deploys via the Pages Git integration when changes are pushed to the `main` branch.
+One repo → one Cloudflare Pages project (`elsanjose-com`, TGWAB account), deployed by the **Pages Git integration** on every push to `main`. No build step—the repo is the output; framework preset **None**. There is no other deploy path.
+
+The canonical host is **`elsanjose.com`** (apex); `www.elsanjose.com` 301s to it.
 
 1. Push changes to the `main` branch
-2. Cloudflare Pages automatically builds and deploys the site
+2. Cloudflare Pages automatically deploys the site
 3. Visit [elsanjose.com](https://elsanjose.com) to see the live site
 
 ## 📁 Project Structure
@@ -43,6 +45,7 @@ This website is hosted on **Cloudflare Pages** and automatically deploys via the
 elsanjose.com/
 ├── index.html              # Main website page
 ├── 404.html                # Custom 404 error page
+├── _headers                # Cloudflare Pages security headers (CSP etc.)
 ├── CNAME                   # Custom domain configuration
 ├── robots.txt              # Search engine crawling rules
 ├── sitemap.xml             # XML sitemap for SEO
@@ -97,9 +100,21 @@ This website includes:
 - ✅ `security.txt` - Security contact info
 - ✅ `site.webmanifest` - Web app manifest with icons
 - ✅ `404.html` - Custom error page
+- ✅ `_headers` - Security headers with a strict Content-Security-Policy
 - ✅ Open Graph meta tags
 - ✅ Responsive viewport meta tag
 - ✅ Semantic HTML5
+
+## 📋 Standards
+
+Built to the TGWAB Dev Standards **v2.19.0** (internal). Client property, **Fully managed** tier—the product-facing sections (§1 branding, §10 link-backs, §17 launch checklist) do not apply.
+
+### Deviations
+
+- §2—Astro + Tailwind stack—hand-authored static site inherited from the client's pre-standards build—2026-08-04—permanent
+- §2—no runtime CDNs—Playfair Display & Inter still load from Google Fonts; self-hosting the woff2 files is the open follow-up—2026-08-04—review 2026-11-01
+- §11—generated sitemap—no build step on this site, so `sitemap.xml` is maintained by hand—2026-08-04—permanent
+- §14—dark mode legibility—site is light-only by client design (`color-scheme: light only`)—2026-08-04—permanent
 
 ## 📝 [License](LICENSE)
 
