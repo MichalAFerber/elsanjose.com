@@ -27,6 +27,7 @@
 
 		<!-- Twitter Card -->
 		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:creator" content="@michalaferber" />
 		<meta name="twitter:title" content="El San Jose Mexican Restaurant" />
 		<meta name="twitter:description" content="Authentic Mexican restaurant in Lake City, SC. Serving delicious tacos, burritos, enchiladas and more." />
 		<meta name="twitter:image" content="https://elsanjose.com/assets/images/share.jpg" />
@@ -39,7 +40,7 @@
 
 		<!-- Web Standard Files -->
 		<link rel="author" href="/humans.txt" />
-		<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+		<link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
 
 		<!-- Plausible Analytics (self-hosted) -->
 		<script defer data-domain="elsanjose.com" src="https://plausible.thompsonblack.us/js/script.outbound-links.file-downloads.tagged-events.js"></script>
@@ -300,12 +301,13 @@
 					</div>
 				</div>
 				<div class="footer-bottom">
-					<p>&copy; 2026 El San Jose Mexican Restaurant. All rights reserved.</p>
+					<p>&copy; <span id="footer-year">2026</span> El San Jose Mexican Restaurant. All rights reserved.</p>
 					<p class="hosted-by">Created with <span aria-label="love">❤️</span> by <a href="https://michalferber.dev/" target="_blank" rel="noopener">Michal Ferber</a>, aka <a href="https://techguywithabeard.com/" target="_blank" rel="noopener">TechGuyWithABeard</a>.</p>
 				</div>
 			</div>
 		</footer>
 
 		<script src="/assets/main.min.js"></script>
+		<script>document.getElementById("footer-year").textContent = new Date().getFullYear();</script>
 	</body>
 </html>
